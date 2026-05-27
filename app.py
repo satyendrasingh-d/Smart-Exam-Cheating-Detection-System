@@ -127,9 +127,6 @@ if st.button("🔍 Analyze Behavior"):
     # ==================================================
     # MODEL PREDICTION
     # ==================================================
-    import pickle
-    with open('cheating_model.pkl','rb') as file:
-        model = pickle.load(file)
     # Predict behavior
     prediction = model.predict(input_data)[0]
 
