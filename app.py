@@ -127,7 +127,8 @@ if st.button("🔍 Analyze Behavior"):
     # ==================================================
     # MODEL PREDICTION
     # ==================================================
-
+    # Load saved ML model
+    model = joblib.load('model/cheating_model.pkl')
     # Predict behavior
     prediction = model.predict(input_data)[0]
 
