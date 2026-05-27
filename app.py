@@ -13,7 +13,8 @@ import pandas as pd
 # LOAD TRAINED MODEL
 # ======================================================
 
-
+# Load saved ML model
+model = joblib.load('cheating_model.pkl')
 
 # ======================================================
 # PAGE CONFIGURATION
