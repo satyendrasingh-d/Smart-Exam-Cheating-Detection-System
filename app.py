@@ -127,8 +127,9 @@ if st.button("🔍 Analyze Behavior"):
     # ==================================================
     # MODEL PREDICTION
     # ==================================================
-    # Load saved ML model
-    model = joblib.load('model/cheating_model.pkl')
+    import pickle
+    with open('cheating_model.pkl','rb') as file:
+        model = pickle.load(file)
     # Predict behavior
     prediction = model.predict(input_data)[0]
 
